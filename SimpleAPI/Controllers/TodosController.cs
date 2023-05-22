@@ -13,8 +13,8 @@ namespace SimpleAPI.Controllers
     [Route(APIRoutes.Base)]
     public class TodosController : Controller
     {
-        private ITodoService _todoService;
-        private IMapper _mapper;
+        private readonly ITodoService _todoService;
+        private readonly IMapper _mapper;
 
         public TodosController(IMapper mapper, ITodoService todoService)
         {
